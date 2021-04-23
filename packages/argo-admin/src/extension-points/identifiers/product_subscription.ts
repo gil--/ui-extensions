@@ -28,7 +28,9 @@ export type ProductSubscriptionStandardApi<
   T extends ProductSubscriptionExtensionPoint
 > = StandardApi<T> & ToastApi;
 
-export type ProductSubscriptionCreateApi = ProductSubscriptionStandardApi<'Admin::Product::SubscriptionPlan::Create'> & {
+export type ProductSubscriptionCreateApi = ProductSubscriptionStandardApi<
+  'Admin::Product::SubscriptionPlan::Create'
+> & {
   container: ProductSubscriptionContainerApi;
   data: {
     productId: string;
@@ -36,7 +38,9 @@ export type ProductSubscriptionCreateApi = ProductSubscriptionStandardApi<'Admin
   };
 };
 
-export type ProductSubscriptionAddApi = ProductSubscriptionStandardApi<'Admin::Product::SubscriptionPlan::Add'> & {
+export type ProductSubscriptionAddApi = ProductSubscriptionStandardApi<
+  'Admin::Product::SubscriptionPlan::Add'
+> & {
   container: ProductSubscriptionContainerApi &
     ProductSubscriptionModalContainerApi;
   data: {
@@ -45,7 +49,9 @@ export type ProductSubscriptionAddApi = ProductSubscriptionStandardApi<'Admin::P
   };
 };
 
-export type ProductSubscriptionEditApi = ProductSubscriptionStandardApi<'Admin::Product::SubscriptionPlan::Edit'> & {
+export type ProductSubscriptionEditApi = ProductSubscriptionStandardApi<
+  'Admin::Product::SubscriptionPlan::Edit'
+> & {
   container: ProductSubscriptionContainerApi;
   data: {
     sellingPlanGroupId: string;
@@ -54,7 +60,9 @@ export type ProductSubscriptionEditApi = ProductSubscriptionStandardApi<'Admin::
   };
 };
 
-export type ProductSubscriptionRemoveApi = ProductSubscriptionStandardApi<'Admin::Product::SubscriptionPlan::Remove'> & {
+export type ProductSubscriptionRemoveApi = ProductSubscriptionStandardApi<
+  'Admin::Product::SubscriptionPlan::Remove'
+> & {
   container: ProductSubscriptionContainerApi &
     ProductSubscriptionModalContainerApi;
   data: {
