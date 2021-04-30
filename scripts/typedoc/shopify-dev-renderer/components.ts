@@ -51,12 +51,11 @@ export async function components(paths: Paths) {
 
   components.forEach(({value: {name, docs, props}}: any) => {
     const outputFile = `${componentDocsPath}/${name.toLowerCase()}.md`;
-
-    const docsContent = docs ? strip(docs.content).trim() : '';
-
     const componentUrl = `${
       paths.shopifyDevUrl
     }/components/${name.toLowerCase()}`;
+
+    const docsContent = docs ? strip(docs.content).trim() : '';
 
     let markdown = renderYamlFrontMatter({
       gid: findUuid(outputFile),

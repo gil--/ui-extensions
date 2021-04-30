@@ -1,4 +1,4 @@
-import {renderForShopifyDev} from './typedoc';
+import {extensionPoints, components, gettingStarted} from './typedoc/shopify-dev-renderer';
 
 const paths = {
   inputRoot: '../checkout-web/packages/argo-checkout',
@@ -10,4 +10,6 @@ const paths = {
   shopifyDevUrl: '/docs/checkout-extensions',
 };
 
-renderForShopifyDev(paths);
+extensionPoints(paths);
+components(paths);
+gettingStarted(paths);

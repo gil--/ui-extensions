@@ -1,13 +1,5 @@
-import {Paths} from '../types';
+export {gettingStarted} from './getting-started';
+export {extensionPoints} from './extension-points';
+export {components} from './components';
+export {extensionApi} from './extension-api';
 
-import {gettingStarted} from './getting-started';
-import {extensionPoints} from './extension-points';
-import {components} from './components';
-
-export {extensionPoints, components, gettingStarted};
-
-export function renderForShopifyDev(paths: Paths) {
-  extensionPoints(paths);
-  components(paths);
-  gettingStarted(paths);
-}

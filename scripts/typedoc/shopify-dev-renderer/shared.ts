@@ -18,7 +18,6 @@ export interface Node {
   module: Module | undefined;
 }
 
-
 interface FrontMatter {
   gid: string;
   url: string;
