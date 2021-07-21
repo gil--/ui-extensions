@@ -9,7 +9,15 @@ import {
   ProductSubscriptionExtensionPointCallback,
 } from './identifiers/product_subscription';
 
+import {
+  HackDays30ArgoAppBridgeExtensionPoint,
+  HackDays30ArgoAppBridgeExtensionApi,
+  HackDays30ArgoAppBridgeExtensionPointCallback,
+} from './identifiers/hack_days_30_argo_app_bridge';
+
 export type {PlaygroundExtensionPoint, ProductSubscriptionExtensionPoint};
+
+export {HackDays30ArgoAppBridgeExtensionPoint};
 
 /*
 Placeholder for new imports
@@ -23,10 +31,13 @@ export type {
 
 export type ExtensionPoint =
   | PlaygroundExtensionPoint
-  | ProductSubscriptionExtensionPoint;
+  | ProductSubscriptionExtensionPoint
+  | HackDays30ArgoAppBridgeExtensionPoint;
 
 export type ExtensionApi = PlaygroundExtensionApi &
-  ProductSubscriptionExtensionApi;
+  ProductSubscriptionExtensionApi &
+  HackDays30ArgoAppBridgeExtensionApi;
 
 export type ExtensionPointCallback = PlaygroundExtensionPointCallback &
-  ProductSubscriptionExtensionPointCallback;
+  ProductSubscriptionExtensionPointCallback &
+  HackDays30ArgoAppBridgeExtensionPointCallback;
