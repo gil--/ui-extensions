@@ -17,6 +17,7 @@ export * from './Select';
 export * from './Spinner';
 export * from './Stack';
 export * from './StackItem';
+export * from './StarRating';
 export * from './Text';
 export * from './TextField';
 export * from './Thumbnail';
