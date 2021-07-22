@@ -1,6 +1,10 @@
 import {createRemoteComponent} from '@remote-ui/core';
 
-export interface IndexTableRowProps {}
+export interface IndexTableRowProps {
+  id: string;
+  selected: boolean;
+  position: number;
+}
 
 /**
  * `IndexTableRow` displays a filterable collection of objects of the same type, like products or customers.

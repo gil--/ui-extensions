@@ -1,7 +1,13 @@
 import {createRemoteComponent} from '@remote-ui/core';
 
+export interface IndexTableHeading {
+  title: string;
+  new?: boolean;
+  hidden?: boolean;
+}
+
 export interface IndexTableProps {
-  headings: string[];
+  headings: IndexTableHeading[];
   itemCount: number;
   selectedItemsCount: "All" | number;
   onSelectionChange: (
