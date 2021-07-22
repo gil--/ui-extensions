@@ -1,3 +1,14 @@
 export interface LocationApi {
-  location: {pathname: string};
+  location: Location;
+}
+
+export interface RouterApi {
+  history: {
+    push(location: Location): void;
+    replace(location: Location): void;
+  } & LocationApi;
+}
+
+export interface Location {
+  pathname: string;
 }

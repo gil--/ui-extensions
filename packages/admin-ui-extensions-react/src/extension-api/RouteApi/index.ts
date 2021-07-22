@@ -1,14 +1,14 @@
-import {LocationApi} from '@shopify/admin-ui-extensions';
+import {RouterApi} from '@shopify/admin-ui-extensions';
 import {useExtensionApi} from '../utils';
 
-export function isLocationApi(api: any): api is LocationApi {
-  return 'location' in api;
+export function isRouterApi(api: any): api is RouterApi {
+  return 'history' in api;
 }
 
-export function useLocation() {
+export function useRouter() {
   const api = useExtensionApi();
-  if (!isLocationApi(api)) {
-    throw new Error('No location api found');
+  if (!isRouterApi(api)) {
+    throw new Error('No router api found');
   }
-  return api.location as LocationApi['location'];
+  return api.history as RouterApi['history'];
 }
