@@ -3,7 +3,7 @@ import {createRemoteComponent} from '@remote-ui/core';
 export interface IndexTableProps {
   headings: string[];
   itemCount: number;
-  selectedItemsCount: number;
+  selectedItemsCount: "All" | number;
   onSelectionChange: (
     selectionType: string,
     toggleType: boolean,
