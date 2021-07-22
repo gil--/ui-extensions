@@ -41,6 +41,13 @@ export interface PageProps {
   secondaryActions?: DestructableActionWithIcon[];
   /** Title of Page */
   title?: string;
+
+  thumbnail?: string;
+
+  pagination?: {
+    hasNext: boolean;
+    hasPrevious: boolean;
+  }
 }
 
 export const Page = createRemoteComponent<'Page', PageProps>('Page');
