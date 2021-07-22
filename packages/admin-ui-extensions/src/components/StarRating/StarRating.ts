@@ -9,4 +9,5 @@ export interface StarRatingProps {
  * Temporary Component for hackdays
  *
  */
+
 export const StarRating = createRemoteComponent<'StarRating', StarRatingProps>('StarRating');

@@ -7,3 +7,4 @@ export * from './List';
 export * from './Loading';
 export * from './Overlay';
 export * from './Structure';
+export * from './Table';
