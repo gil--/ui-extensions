@@ -29,5 +29,5 @@ export type {LayoutApi, LocaleApi, SessionTokenApi, ToastApi};
 
 export interface ContainerAction {
   content: string;
-  onAction(): void;
+  onAction?: () => void;
 }
