@@ -4,6 +4,8 @@ export {isLayoutApi} from './LayoutApi';
 export type {LocaleApi} from './LocaleApi';
 export {isLocaleApi} from './LocaleApi';
 
+export type {LocationApi} from './RouteApi';
+
 export type {ContainerApi, ExtensionContainer} from './ContainerApi';
 export {isContainerApi} from './ContainerApi';
 

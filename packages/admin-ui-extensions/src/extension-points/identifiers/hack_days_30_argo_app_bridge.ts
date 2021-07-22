@@ -7,6 +7,7 @@ import {
   RenderableExtensionCallback,
   StandardApi,
   ToastApi,
+  LocationApi,
 } from '../types';
 
 // Add the unique extension point(s) as a union string
@@ -25,7 +26,8 @@ export interface HackDays30ArgoAppBridgeContainerApi {
 export interface HackDays30ArgoAppBridgeExtensionApi {
   'Admin::App': StandardApi<HackDays30ArgoAppBridgeExtensionPoint> &
     ToastApi &
-    HackDays30ArgoAppBridgeContainerApi;
+    HackDays30ArgoAppBridgeContainerApi &
+    LocationApi;
   'Admin::Product::MoreActions': StandardApi<
     HackDays30ArgoAppBridgeExtensionPoint
   > &
