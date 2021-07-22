@@ -34,6 +34,8 @@ export {Stack} from './Stack';
 export type {StackProps} from './Stack';
 export {StackItem} from './StackItem';
 export type {StackItemProps} from './StackItem';
+export {Tabs} from './Tabs';
+export type {TabsProps} from './Tabs';
 export {Text} from './Text';
 export type {TextProps} from './Text';
 export {TextField} from './TextField';
