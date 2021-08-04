@@ -1,0 +1,25 @@
+name: Rebase from main
+
+on:
+  push:
+    branches: [rebase-test-main]
+
+jobs:
+  rebase-from-main:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v2
+        name: Checkout admin-rc
+        with:
+          ref: rebase-test-admin-rc
+
+      - name: Set up
+        run: |
+             git remote set-url origin https://x-access-token:${GITHUB_TOKEN}@github.com/${{ github.repository }}.git
+             git config --global user.name "admin-rc merge bot"
+
+      - name: Rebase and push
+        run: |
+             git pull --rebase origin rebase-test-main
+             git push --force
