@@ -1,5 +1,3 @@
-test
-
 # UI Extensions
 
 This repo contains the packages that make up the UI extensibility framework for Shopify’s first-party applications. It includes a collection of patterns and libraries that give Shopify a performant, strongly-typed way of providing UI extension points for third-party developers.
