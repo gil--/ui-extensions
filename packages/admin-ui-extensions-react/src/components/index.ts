@@ -10,6 +10,7 @@ export * from './Icon';
 export * from './InlineStack';
 export * from './Heading';
 export * from './Link';
+export * from './Map';
 export * from './Modal';
 export * from './OptionList';
 export * from './Radio';

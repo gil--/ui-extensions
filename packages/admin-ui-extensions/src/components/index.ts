@@ -18,6 +18,8 @@ export {Icon} from './Icon';
 export type {IconProps} from './Icon';
 export {InlineStack} from './InlineStack';
 export type {InlineStackProps} from './InlineStack';
+export {Map} from './Map';
+export type {MapProps} from './Map';
 export {Modal} from './Modal';
 export type {ModalProps} from './Modal';
 export {Link} from './Link';
