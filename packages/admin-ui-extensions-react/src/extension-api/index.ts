@@ -5,3 +5,4 @@ export * from './ContainerApi';
 export * from './SessionTokenApi';
 export * from './ToastApi';
 export * from './DataApi';
+export * from './RouteApi';

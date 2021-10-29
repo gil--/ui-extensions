@@ -3,6 +3,7 @@ import {RemoteRoot, RemoteComponentType} from '@remote-ui/core';
 import type {LayoutApi} from '../extension-api/LayoutApi';
 import type {LocaleApi} from '../extension-api/LocaleApi';
 import type {ToastApi} from '../extension-api/ToastApi';
+import type {RouterApi} from '../extension-api/RouteApi';
 import type {SessionTokenApi} from '../extension-api/SessionTokenApi';
 
 export type ExtensionResult = Record<string, never> | void;
@@ -25,9 +26,9 @@ export type StandardApi<T> = {[key: string]: any} & {
   LocaleApi &
   SessionTokenApi;
 
-export type {LayoutApi, LocaleApi, SessionTokenApi, ToastApi};
+export type {LayoutApi, LocaleApi, SessionTokenApi, ToastApi, RouterApi};
 
 export interface ContainerAction {
   content: string;
-  onAction(): void;
+  onAction?: () => void;
 }

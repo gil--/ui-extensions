@@ -22,3 +22,10 @@ export * from './Text';
 export * from './TextBlock';
 export * from './TextField';
 export * from './Thumbnail';
+
+export * from './IndexTable';
+export * from './IndexTableCell';
+export * from './IndexTableRow';
+export * from './StarRating';
+export * from './Page';
+export * from './Tabs';

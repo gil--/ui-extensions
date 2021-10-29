@@ -7,12 +7,24 @@ type Source =
   | 'starFilled'
   | 'sortMinor';
 
+type Color =
+  | 'base'
+  | 'subdued'
+  | 'critical'
+  | 'interactive'
+  | 'warning'
+  | 'highlight'
+  | 'success'
+  | 'primary';
+
 export interface IconProps {
   /** Pre-defined glyph content to display. */
   source: Source;
 
   /** Text describing the icon, to be read to screenreaders. */
   accessibilityLabel?: string;
+
+  color?: Color;
 }
 
 /**

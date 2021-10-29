@@ -8,6 +8,7 @@ import {
   ImageComponents,
   OverlayComponents,
   StructureComponents,
+  TableComponents,
 } from '../component-sets';
 
 export type AllComponentsSchema =
@@ -19,4 +20,5 @@ export type AllComponentsSchema =
   | LoadingComponents
   | ImageComponents
   | OverlayComponents
-  | StructureComponents;
+  | StructureComponents
+  | TableComponents;

@@ -28,6 +28,9 @@ export type {
   OptionListProps,
   DestructableAction,
   DisableableAction,
+  IndexTableProps,
+  IndexTableCellProps,
+  IndexTableRowProps,
 } from './components';
 
 export * from './extension-api';
@@ -44,6 +47,7 @@ export type {
 } from './extension-api';
 
 export type {
+  ArgoDemoExtensionPoint,
   PlaygroundExtensionPoint,
   ProductSubscriptionExtensionPoint,
   ContainerAction,
