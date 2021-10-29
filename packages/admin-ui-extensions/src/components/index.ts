@@ -46,5 +46,17 @@ export {TextField} from './TextField';
 export type {TextFieldProps} from './TextField';
 export {Thumbnail} from './Thumbnail';
 export type {ThumbnailProps} from './Thumbnail';
+export {Tabs} from './Tabs';
+export type {TabsProps} from './Tabs';
+export {StarRating} from './StarRating';
+export type {StarRatingProps} from './StarRating';
+export {IndexTable} from './IndexTable';
+export type {IndexTableProps} from './IndexTable';
+export {IndexTableRow} from './IndexTableRow';
+export type {IndexTableRowProps} from './IndexTableRow';
+export {IndexTableCell} from './IndexTableCell';
+export type {IndexTableCellProps} from './IndexTableCell';
+export {Page} from './Page';
+export type {PageProps} from './Page';
 
 export type {DestructableAction, DisableableAction} from './types';

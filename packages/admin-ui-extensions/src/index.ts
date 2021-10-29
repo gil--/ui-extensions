@@ -28,6 +28,9 @@ export type {
   OptionListProps,
   DestructableAction,
   DisableableAction,
+  IndexTableProps,
+  IndexTableCellProps,
+  IndexTableRowProps,
 } from './components';
 
 export * from './extension-api';

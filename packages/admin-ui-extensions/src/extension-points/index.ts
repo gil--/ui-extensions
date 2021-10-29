@@ -10,7 +10,14 @@ import {
   ProductSubscriptionExtensionPointCallback,
 } from './identifiers/product_subscription';
 
-export type {PlaygroundExtensionPoint, ProductSubscriptionExtensionPoint};
+import {
+  ArgoDemoExtensionPoint,
+  ArgoDemoExtensionApi,
+  ArgoDemoExtensionPointCallback,
+} from './identifiers/argo-demo';
+
+
+export type {PlaygroundExtensionPoint, ProductSubscriptionExtensionPoint, ArgoDemoExtensionPoint};
 
 /*
 Placeholder for new imports
@@ -24,10 +31,10 @@ export type {
 
 export type ExtensionPoint =
   | PlaygroundExtensionPoint
-  | ProductSubscriptionExtensionPoint;
+  | ProductSubscriptionExtensionPoint & ArgoDemoExtensionPoint;
 
 export type ExtensionApi = PlaygroundExtensionApi &
-  ProductSubscriptionExtensionApi;
+  ProductSubscriptionExtensionApi & ArgoDemoExtensionApi;
 
 export type ExtensionPointCallback = PlaygroundExtensionPointCallback &
-  ProductSubscriptionExtensionPointCallback;
+  ProductSubscriptionExtensionPointCallback & ArgoDemoExtensionPointCallback;
