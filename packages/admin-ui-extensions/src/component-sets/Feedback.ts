@@ -1,3 +1,3 @@
-import {Badge, Banner} from '../components';
+import {Avatar, Badge, Banner} from '../components';
 
-export type FeedbackComponents = typeof Badge | typeof Banner;
+export type FeedbackComponents = typeof Avatar | typeof Badge | typeof Banner;
