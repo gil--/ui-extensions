@@ -1,3 +1,7 @@
-import {Badge, Banner} from '../components';
+import {Avatar, Badge, Banner, ProgressBar} from '../components';
 
-export type FeedbackComponents = typeof Badge | typeof Banner;
+export type FeedbackComponents =
+  | typeof Avatar
+  | typeof Badge
+  | typeof Banner
+  | typeof ProgressBar;

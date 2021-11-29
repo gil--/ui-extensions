@@ -48,3 +48,5 @@ export {Thumbnail} from './Thumbnail';
 export type {ThumbnailProps} from './Thumbnail';
 
 export type {DestructableAction, DisableableAction} from './types';
+export * from './Avatar';
+export * from './ProgressBar';
