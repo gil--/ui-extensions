@@ -1,3 +1,3 @@
-import {Thumbnail, Icon} from '../components';
+import {Avatar, Thumbnail, Icon} from '../components';
 
-export type ImageComponents = typeof Thumbnail | typeof Icon;
+export type ImageComponents = typeof Avatar | typeof Thumbnail | typeof Icon;
