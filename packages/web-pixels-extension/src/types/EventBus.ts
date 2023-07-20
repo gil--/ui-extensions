@@ -1,23 +1,15 @@
-import type {
-  PixelEvents,
-  PixelEventsCustomEvent as PixelEventsCustomEventOrig,
-} from './PixelEvents';
+import type {PixelEvents, CustomEvent} from './PixelEvents';
 
 export type SchemaVersion = 'v1';
 
 export interface StandardEvents extends PixelEvents {
-  all_events: PixelEvents[keyof PixelEvents];
+  all_events: PixelEvents[keyof PixelEvents] | CustomEvent;
   all_standard_events: PixelEvents[keyof PixelEvents];
-  all_custom_events: PixelEvents[keyof PixelEvents];
-}
-
-interface PixelEventsCustomEvent
-  extends Omit<PixelEventsCustomEventOrig, 'name'> {
-  name: string;
+  all_custom_events: CustomEvent;
 }
 
 export interface CustomEvents {
-  [key: string]: PixelEventsCustomEvent;
+  [key: string]: CustomEvent;
 }
 
 export type Events = StandardEvents & CustomEvents;
@@ -47,7 +39,7 @@ export interface EventBus {
   ): boolean;
   publishCustomEvent(
     name: string,
-    payload?: PublisherCustomData<Events['custom_event']>,
+    payload?: PublisherCustomData<CustomEvent>,
     options?: PublisherOptions,
   ): boolean;
   subscribe<K extends KeyOfEvent<Events>>(
